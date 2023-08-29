@@ -40,7 +40,13 @@ class CalculateDistanceFromHqCommand extends Command
             "Neverland - 5225 Figueroa Mountain Road, Los Olivos, Calif. 93441, USA",
         ];
 
-        (new CalculateDistanceService($locations))->fromHq();
+        $distances = (new CalculateDistanceService($locations))->fromHq();
+
+        //TODO: Sort
+
+        //TODO: Display on console
+
+        //TODO: Save to CSV
 
         return Command::SUCCESS;
     }
